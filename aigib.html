@@ -3,94 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan</title>
+    <title>AiGib Invitation - Undangan Pernikahan Digital</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background: #f7f3f2;
+            background-color: #f7f7f7;
             color: #333;
         }
         header {
-            background: #6a1b9a;
+            background-color: #6b5b95;
             color: white;
-            padding: 20px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-        }
-        section {
             padding: 20px;
+            text-align: center;
         }
-        .event-details {
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 200px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .rsvp-form {
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .rsvp-form input, .rsvp-form button {
-            width: 90%;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            background: #eee;
         }
-        .rsvp-form button {
-            background: #6a1b9a;
+        nav a {
+            text-decoration: none;
+            color: #6b5b95;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('wedding-background.jpg') no-repeat center center/cover;
             color: white;
-            border: none;
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+        }
+        .services h2 {
+            color: #6b5b95;
+        }
+        .service-card {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Undangan Pernikahan</h1>
-        <p>Bersama kami merayakan hari bahagia</p>
+        <h1>AiGib Invitation</h1>
+        <p>Undangan Pernikahan Digital Elegan dan Berkesan</p>
     </header>
-    <section>
-        <div class="event-details">
-            <h2>Detail Acara</h2>
-            <p><strong>Nama:</strong> [Nama Anda] & [Nama Pasangan]</p>
-            <p><strong>Tanggal:</strong> [Tanggal Acara]</p>
-            <p><strong>Lokasi:</strong> [Lokasi Acara]</p>
+    
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Hubungi Kami</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Undangan Digital yang Membuat Pernikahan Anda Tak Terlupakan</h2>
+        <p>Jadikan momen istimewa Anda lebih berkesan dengan undangan pernikahan digital kami.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <div class="service-card">
+            <h3>Undangan Digital</h3>
+            <p>Desain undangan yang unik dan elegan.</p>
         </div>
-      <div class="gallery">
-    <h2>Galeri Kami</h2>
-    <img src="https://via.placeholder.com/200?text=Foto+1" alt="Foto 1">
-    <img src="https://via.placeholder.com/200?text=Foto+2" alt="Foto 2">
-    <img src="https://via.placeholder.com/200?text=Foto+3" alt="Foto 3">
-</div>
-        <div class="rsvp-form">
-            <h2>RSVP</h2>
-            <form>
-                <input type="text" placeholder="Nama Anda" required>
-                <input type="email" placeholder="Email Anda" required>
-                <button type="submit">Kirim</button>
-            </form>
+        <div class="service-card">
+            <h3>Video Animasi</h3>
+            <p>Animasi pernikahan personal untuk cerita cinta Anda.</p>
+        </div>
+        <div class="service-card">
+            <h3>QR Code RSVP</h3>
+            <p>Mudahkan tamu untuk mengonfirmasi kehadiran.</p>
         </div>
     </section>
+
+    <footer>
+        <p>&copy; 2024 AiGib Invitation. Semua Hak Dilindungi.</p>
+        <p>Email: info@aigib-invitation.com | Telepon: +62 812-3456-7890</p>
+    </footer>
 </body>
 </html>
